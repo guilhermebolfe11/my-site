@@ -1,6 +1,6 @@
 # My Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b94bca4f-8729-4ca8-afd0-de26d669acc0/deploy-status)](https://app.netlify.com/sites/lucid-haibt-98f962/deploys) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Release](https://img.shields.io/github/v/release/guilhermebolfe11/my-site)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/294e0ac2-3cd4-42d0-9d35-4101e18a7cff/deploy-status)](https://app.netlify.com/sites/tender-davinci-00ecd8/deploys) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Release](https://img.shields.io/github/v/release/guilhermebolfe11/my-site)
 
 My personal website, where I publish my resume, explain my experiences and many more.
 
