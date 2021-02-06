@@ -3,11 +3,10 @@ import { createMuiTheme, responsiveFontSizes } from '@material-ui/core/styles';
 const theme = createMuiTheme({
   palette: {
     primary: {
-      main: '#1565c0',
-      contrastText: '#E0E0E0',
+      main: '#ECEFF1',
     },
     secondary: {
-      main: '#d32f2f',
+      main: '#37474F',
     },
     error: {
       main: '#db5858',
@@ -27,35 +26,33 @@ const theme = createMuiTheme({
     fontFamily: ['-apple-system', 'Roboto Slab', 'Roboto', 'serif'].join(','),
   },
   overrides: {
+    MuiInputBase: {
+      root: {
+        color: '#ECEFF1',
+      },
+    },
+    MuiTypography: {
+      h3: {
+        fontFamily: 'Nunito',
+      },
+    },
+    MuiCard: {
+      root: {
+        backgroundColor: '#ECEFF1',
+      },
+    },
+    MuiCardHeader: {
+      root: {
+        fontFamily: 'JetBrains Mono',
+      },
+    },
     MuiCardContent: {
       root: {
         overflowY: 'auto',
         listStyle: 'none',
         '&::-webkit-scrollbar': {
-          width: '0.4em',
+          display: 'none',
         },
-        '&::-webkit-scrollbar-thumb': {
-          borderRadius: '4px',
-          backgroundColor: '#424242',
-        },
-      },
-    },
-    MuiList: {
-      root: {
-        overflowY: 'auto',
-        listStyle: 'none',
-        '&::-webkit-scrollbar': {
-          width: '0.4em',
-        },
-        '&::-webkit-scrollbar-thumb': {
-          borderRadius: '4px',
-          backgroundColor: '#424242',
-        },
-      },
-    },
-    MuiListItemText: {
-      secondary: {
-        fontFamily: 'JetBrains Mono',
       },
     },
   },

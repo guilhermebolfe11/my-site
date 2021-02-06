@@ -23,7 +23,7 @@ export default createGlobalStyle`
   }
 
   body{
-    background:#FAFAFA;
+    background:#37474F;
     color: #424242;
     -webkit-font-smoothing: antialiased;
     ::-webkit-scrollbar {
