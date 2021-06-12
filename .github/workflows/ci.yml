@@ -24,8 +24,8 @@ jobs:
         with:
           node-version: 14.x
 
-      - name: Install dependencies
-        run: yarn
+      - name: Check dependencies cache
+        uses: bahmutov/npm-install@v1.6.0
 
       - name: Check test
         run: yarn test
