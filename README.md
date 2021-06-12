@@ -37,8 +37,10 @@ In the project directory, you can run:
 
 ### Install dependencies
 
-```bash
+```sh
   npm install
+  or
+  yarn
 ```
 
 ### Start
