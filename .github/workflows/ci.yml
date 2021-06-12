@@ -30,5 +30,10 @@ jobs:
       - name: Check test
         run: yarn test
 
-      - name: Build
+      - name: Check build
         run: yarn build
+        
+      - name: Check coveralls
+        uses: coverallsapp/github-action@v1.1.2
+        with: 
+          github-token: uDYfERcLdzdWpc9elz6SoitCtZ3Qx6T8o
