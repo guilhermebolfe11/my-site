@@ -36,4 +36,4 @@ jobs:
       - name: Check coveralls
         uses: coverallsapp/github-action@v1.1.2
         with: 
-          github-token: uDYfERcLdzdWpc9elz6SoitCtZ3Qx6T8o
+          github-token: ${{ secrets.GITHUB_TOKEN }}
