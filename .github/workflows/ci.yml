@@ -29,7 +29,7 @@ jobs:
         run: yarn test
 
       - name: Check linting
-        run: yarn lint
+        uses: mrdivyansh/eslint-action@v1.0.7
 
       - name: Check commit message
         uses: wagoid/commitlint-github-action@v3
