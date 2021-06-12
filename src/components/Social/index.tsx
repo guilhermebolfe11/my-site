@@ -14,10 +14,10 @@ export function Social() {
         <a href="https://www.linkedin.com/in/guilherme-bolfe/" target="_blank">
           <FaLinkedinIn size="2rem" />
         </a>
-        <a>
+        <a href="https://www.instagram.com/guibolfe/" target="_blank">
           <FaInstagram size="2rem" />
         </a>
-        <a>
+        <a href="https://open.spotify.com/user/guilhermebolfe" target="_blank">
           <FaSpotify size="2rem" />
         </a>
         <a href="mailto:bolfeguilherme@gmail.com">
