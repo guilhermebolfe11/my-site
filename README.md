@@ -12,9 +12,35 @@ What you need to install to use the software locally
 - Npm or Yarn
 - React
 
-## Available Scripts
+## Tech Stack
+
+- React - Next.js
+- TypeScript
+- SCSS
+- GitHub Actions
+- Jest
+
+## Run Locally
+
+Clone the project
+
+```sh
+  git clone https://github.com/guilhermebolfe11/my-site
+```
+
+Go to the project directory
+
+```sh
+  cd my-site
+```
 
 In the project directory, you can run:
+
+### Install dependencies
+
+```bash
+  npm install
+```
 
 ### Start
 
@@ -44,6 +70,20 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+  or
+  yarn test
+```
+
 ## License
 
 Usage is provided under the [MIT License](https://github.com/guilhermebolfe11/my-site/blob/master/LICENSE). See LICENSE for the full details.
+
+## Authors
+
+- [@guilhermebolfe11](https://www.github.com/guilhermebolfe11)
