@@ -10,7 +10,6 @@ What you need to install to use the software locally
 
 - NodeJs
 - Npm or Yarn
-- React
 
 ## Tech Stack
 
