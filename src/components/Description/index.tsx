@@ -1,10 +1,9 @@
 import React from 'react';
 
-import styles from './styles.module.scss';
 
 export function Description() {
   return (
-    <section className={styles.description} title="description">
+    <section >
       <h1>
         Guilherme
         <br />

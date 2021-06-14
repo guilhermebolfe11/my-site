@@ -15,10 +15,9 @@ import {
   SiJest,
 } from 'react-icons/si';
 
-import styles from './styles.module.scss';
 export function Skills() {
   return (
-    <section className={styles.skills}>
+    <section >
       <h1>Skills</h1>
       <nav>
         <a href="https://github.com/guilhermebolfe11/" target="_blank">

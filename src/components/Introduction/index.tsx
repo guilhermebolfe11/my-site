@@ -1,15 +1,14 @@
 import React from 'react';
+import { Grid } from '@material-ui/core';
 
 import { Description } from '../Description';
 import { Social } from '../Social';
 
-import styles from './styles.module.scss';
-
 export function Introduction() {
   return (
-    <section className={styles.sectionInit} title="introduction">
+    <Grid item container direction="row">
       <Description />
       <Social />
-    </section>
+    </Grid>
   );
 }
