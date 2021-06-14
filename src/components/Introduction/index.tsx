@@ -6,9 +6,13 @@ import { Social } from '../Social';
 
 export function Introduction() {
   return (
-    <Grid item container direction="row">
-      <Description />
-      <Social />
+    <Grid item container direction="row" alignItems="center" justify="center">
+      <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+        <Description />
+      </Grid>
+      <Grid item xs={12} sm={12} md={6} lg={4} xl={2}>
+        <Social />
+      </Grid>
     </Grid>
   );
 }

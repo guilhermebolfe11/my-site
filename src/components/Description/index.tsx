@@ -1,18 +1,19 @@
 import React from 'react';
-
+import { Card, CardContent, Typography } from '@material-ui/core';
 
 export function Description() {
   return (
-    <section >
-      <h1>
-        Guilherme
-        <br />
-        Bolfe
-      </h1>
-      <span>
-        Software Engineer <br />
-        based in Porto Alegre, Brazil.
-      </span>
-    </section>
+    <Card elevation={0}>
+      <CardContent>
+        <Typography variant="h2">
+          Guilherme
+          <br />
+          Bolfe
+        </Typography>
+        <Typography variant="subtitle1">
+          Software Engineer based in Porto Alegre, Brazil.
+        </Typography>
+      </CardContent>
+    </Card>
   );
 }
