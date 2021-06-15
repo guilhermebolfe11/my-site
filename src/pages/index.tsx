@@ -38,7 +38,7 @@ export default function Home({ repos }: IHomeProps) {
 
 export const getStaticProps: GetStaticProps = async () => {
   const response = await api.get<IRepository[]>(
-    '/users/guilhermebolfe11/repos',
+    '/users/guilhermebolfe11/repos?sort=created_at',
   );
 
   return {
