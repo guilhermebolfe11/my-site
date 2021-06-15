@@ -11,7 +11,8 @@ describe('Repo component', () => {
           id: 1132,
           description: '',
           name: '',
-          created_at: new Date().toISOString(),
+          pushed_at: new Date().toISOString(),
+          language: '',
         }}
       />,
     );
