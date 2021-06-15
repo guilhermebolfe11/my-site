@@ -16,7 +16,7 @@ export function Jobs() {
       <CardContent>
         <Grid container spacing={2} direction="row" justify="flex-start">
           <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
-            <Card>
+            <Card elevation={3}>
               <CardHeader
                 avatar={<Avatar>B</Avatar>}
                 title={
@@ -37,7 +37,7 @@ export function Jobs() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
-            <Card>
+            <Card elevation={3}>
               <CardHeader
                 avatar={<Avatar>Q</Avatar>}
                 title={
@@ -61,7 +61,7 @@ export function Jobs() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
-            <Card>
+            <Card elevation={3}>
               <CardHeader
                 avatar={<Avatar>D</Avatar>}
                 title={

@@ -16,7 +16,7 @@ export function Graduate() {
       <CardContent>
         <Grid container spacing={2} direction="row" justify="flex-start">
           <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
-            <Card>
+          <Card elevation={3}>
               <CardHeader
                 avatar={<Avatar>U</Avatar>}
                 title={
@@ -38,7 +38,7 @@ export function Graduate() {
             </Card>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4} xl={3}>
-            <Card>
+          <Card elevation={3}>
               <CardHeader
                 avatar={<Avatar>B</Avatar>}
                 title={

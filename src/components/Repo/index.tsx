@@ -33,7 +33,7 @@ export function Repo({ repo }: IRepoProps) {
 
   return (
     <Grid item xs={12} sm={12} md={4} lg={3} xl={2}>
-      <Card>
+      <Card elevation={3}>
         <CardHeader
           avatar={
             <Tooltip title={repo.language ?? 'Markdown'} placement="top">

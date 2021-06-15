@@ -17,7 +17,7 @@ interface IStackProps {
 export function Stack({ stack }: IStackProps) {
   return (
     <Grid item>
-      <Card>
+      <Card elevation={3}>
         <CardHeader subheader={stack.title} />
         <CardContent>
           <Grid container spacing={2} direction="row" justify="flex-start">
