@@ -44,6 +44,9 @@ let theme = createMuiTheme({
     subtitle1: {
       fontFamily: ['JetBrains Mono', 'serif'].join(','),
     },
+    caption: {
+      fontFamily: ['JetBrains Mono', 'serif'].join(','),
+    },
   },
   overrides: {
     MuiLink: {

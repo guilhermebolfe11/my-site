@@ -1,5 +1,5 @@
 import React from 'react';
-
+import { GetStaticProps } from 'next';
 import { Grid } from '@material-ui/core';
 import { ThemeProvider } from '@material-ui/core/styles';
 
@@ -9,10 +9,14 @@ import { Jobs } from '../components/Jobs';
 import { About } from '../components/About';
 import { Projects } from '../components/Projects';
 import { Technologies } from '../components/Technologies';
-
 import MaterialTheme from '../styles/MaterialTheme';
+import IRepository from '../DTOs/IRepository';
+import api from '../services/api';
+interface IHomeProps {
+  repos: IRepository[];
+}
 
-export default function Home() {
+export default function Home({ repos }: IHomeProps) {
   return (
     <ThemeProvider theme={MaterialTheme}>
       <Grid
@@ -23,7 +27,7 @@ export default function Home() {
       >
         <Introduction />
         <About />
-        <Projects />
+        <Projects repos={repos} />
         <Jobs />
         <Technologies />
         <Graduate />
@@ -31,3 +35,16 @@ export default function Home() {
     </ThemeProvider>
   );
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+  const response = await api.get<IRepository[]>(
+    '/users/guilhermebolfe11/repos',
+  );
+
+  return {
+    props: {
+      repos: response.data,
+    },
+    revalidate: 60 * 60 * 24, // 24 hours
+  };
+};

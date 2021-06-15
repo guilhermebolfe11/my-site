@@ -33,7 +33,7 @@ Go to the project directory
   cd my-site
 ```
 
-In the project directory, you can run:
+In the project directory, copy the .env.example file with the name .env.local and you can run:
 
 ### Install dependencies
 
