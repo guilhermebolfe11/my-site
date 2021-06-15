@@ -10,7 +10,7 @@ interface IProjectsProps {
 export function Projects({ repos }: IProjectsProps) {
   return (
     <Card elevation={0}>
-      <CardHeader title="Projects" />
+      <CardHeader title="My Projects" />
       <CardContent>
         <Grid container spacing={2} direction="row" justify="flex-start">
           {repos.map(r => (

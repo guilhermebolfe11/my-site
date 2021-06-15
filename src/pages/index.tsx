@@ -9,6 +9,7 @@ import { Jobs } from '../components/Jobs';
 import { About } from '../components/About';
 import { Projects } from '../components/Projects';
 import { Technologies } from '../components/Technologies';
+import { Publications } from '../components/Publications';
 import MaterialTheme from '../styles/MaterialTheme';
 import IRepository from '../DTOs/IRepository';
 import api from '../services/api';
@@ -31,6 +32,7 @@ export default function Home({ repos }: IHomeProps) {
         <Jobs />
         <Technologies />
         <Graduate />
+        <Publications />
       </Grid>
     </ThemeProvider>
   );

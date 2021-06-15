@@ -49,9 +49,16 @@ let theme = createMuiTheme({
     },
   },
   overrides: {
+    MuiAvatar: {
+      colorDefault: {
+        color: 'rgb(13, 71, 161)',
+        backgroundColor: 'rgba(255, 255, 255, 1)',
+      },
+    },
     MuiLink: {
       root: {
         margin: 5,
+        color: 'rgb(13, 71, 161)',
       },
     },
     MuiCardContent: {
