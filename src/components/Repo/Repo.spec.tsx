@@ -1,22 +1,22 @@
-import { render } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import React from 'react';
 import { Repo } from '.';
 
 describe('Repo component', () => {
   it('render complete', () => {
-    const { getByText } = render(
+   render(
       <Repo
         repo={{
           html_url: '',
           id: 1132,
           description: '',
-          name: '',
+          name: 'Repo-Test',
           pushed_at: new Date().toISOString(),
           language: '',
         }}
       />,
     );
 
-    expect(getByText('Repo'));
+    expect(screen.getByText('Repo-Test'));
   });
 });

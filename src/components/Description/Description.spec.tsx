@@ -6,6 +6,5 @@ describe('Description component', () => {
   it('render complete', () => {
     render(<Description />);
 
-    expect(screen.getByTitle('description'));
   });
 });

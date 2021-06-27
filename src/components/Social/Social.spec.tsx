@@ -1,11 +1,11 @@
-import { render } from '@testing-library/react';
+import { render,screen } from '@testing-library/react';
 import React from 'react';
 import { Social } from '.';
 
 describe('Social component', () => {
   it('render complete', () => {
-    const { getByTitle } = render(<Social />);
+     render(<Social />);
 
-    expect(getByTitle('social-medias'));
+    expect(screen.getByTitle('GitHub'));
   });
 });

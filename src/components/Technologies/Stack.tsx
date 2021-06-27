@@ -21,8 +21,8 @@ export function Stack({ stack }: IStackProps) {
         <CardHeader subheader={stack.title} />
         <CardContent>
           <Grid container spacing={2} direction="row" justify="flex-start">
-            {stack.techs.map(t => (
-              <Grid item>
+            {stack.techs.map((t,i)=> (
+              <Grid key={i} item>
                 <Tooltip title={t.title}>
                   <Link href={t.href} target="_blank">
                     {t.icon}
