@@ -32,7 +32,7 @@
     "@types/node": "^15.12.2",
     "@types/react": "^17.0.9",
     "@typescript-eslint/eslint-plugin": "4.26.0",
-    "@typescript-eslint/parser": "4.26.1",
+    "@typescript-eslint/parser": "4.28.5",
     "babel-jest": "^27.0.2",
     "commitizen": "^4.2.4",
     "cz-conventional-changelog": "3.3.0",
