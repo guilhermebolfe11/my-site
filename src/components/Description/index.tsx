@@ -11,7 +11,7 @@ export function Description() {
           Bolfe
         </Typography>
         <Typography variant="subtitle1">
-          Software Engineer based in Porto Alegre, Brazil.
+        Software Engineer based in Porto Alegre, Brazil. 
         </Typography>
       </CardContent>
     </Card>

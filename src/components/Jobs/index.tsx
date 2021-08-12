@@ -7,6 +7,9 @@ import {
   Grid,
   Avatar,
   Link,
+  List,
+  ListItem,
+  ListItemText,
 } from '@material-ui/core';
 
 export function Jobs() {
@@ -27,12 +30,23 @@ export function Jobs() {
                 subheader="2020-08 - present"
               />
               <CardContent>
-                <Typography variant="caption">
-                  Responsible for developing projects / tasks for the bank's
-                  internal use * Participating actively in the planning decision
-                  of projects / tasks; * Responsible for all stages of the
-                  project / task life cycle; * Acting remotely;
-                </Typography>
+                <List>
+                  <ListItem>
+                    <ListItemText secondary="Responsible for developing projects / tasks for the bank's
+                   internal use" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Participating actively in the planning decision
+                    of projects / tasks" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Responsible for all stages of the
+                    project / task life cycle" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Acting remotely" />
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
           </Grid>
@@ -51,12 +65,20 @@ export function Jobs() {
                 subheader="2020-03 - 2020-08"
               />
               <CardContent>
-                <Typography variant="caption">
-                  Responsible for the company's technology team. * Defining
-                  technologies and architectures for projects; * Acting in
-                  person; * Managing team of 4 Developers including myself; *
-                  Interaction with suppliers and managers;
-                </Typography>
+                <List>
+                  <ListItem>
+                    <ListItemText secondary="Responsible for the company's technology team" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Acting in person" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Managing team of 4 Developers including myself" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Interaction with suppliers and managers" />
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
           </Grid>
@@ -72,15 +94,28 @@ export function Jobs() {
                 subheader="2019-10 - 2020-03"
               />
               <CardContent>
-                <Typography variant="caption">
-                  Responsible for developing solutions for different projects. *
-                  Acting in the stages of analysis, development, testing and
-                  maintenance of the tasks performed. * Working with different
-                  domain and technology niches. * Acting remotely. * The
-                  projects were conducted in 15-day Sprints containing daily
-                  meetings and a face-to-face meeting at each end of the sprint
-                  for alignment
-                </Typography>
+                <List>
+                  <ListItem>
+                    <ListItemText secondary="Responsible for developing solutions for different projects" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Acting in the stages of analysis, development, testing and
+                    maintenance of the tasks performed" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Working with different
+                    domain and technology niches" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="The
+                    projects were conducted in 15-day Sprints containing daily
+                    meetings and a face-to-face meeting at each end of the sprint
+                    for alignment" />
+                  </ListItem>
+                  <ListItem>
+                    <ListItemText secondary="Acting remotely" />
+                  </ListItem>
+                </List>
               </CardContent>
             </Card>
           </Grid>
