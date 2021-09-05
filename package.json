@@ -10,7 +10,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "test": "jest",
+    "test": "jest --passWithNoTests",
     "coveralls": "cat ./coverage/lcov.info | coveralls"
   },
   "dependencies": {
