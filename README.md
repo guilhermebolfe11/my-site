@@ -71,16 +71,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 The build is minified and the filenames include the hashes.\
 Your app is ready to be deployed!
 
-## Running Tests
-
-To run tests, run the following command
-
-```bash
-  npm run test
-  or
-  yarn test
-```
-
 ## License
 
 Usage is provided under the [MIT License](https://github.com/guilhermebolfe11/my-site/blob/master/LICENSE). See LICENSE for the full details.

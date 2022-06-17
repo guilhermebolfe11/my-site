@@ -13,5 +13,3 @@ updates:
       - "dependencies"
     pull-request-branch-name:
       separator: "-"
-    reviewers:
-      - "guilhermebolfe11"
