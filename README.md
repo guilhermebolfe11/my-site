@@ -1,6 +1,6 @@
 # My Site
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a79e2e75-6b88-4eb9-9e80-b01aec57fdae/deploy-status)](https://app.netlify.com/sites/reverent-agnesi-d90498/deploys) [![Coverage Status](https://coveralls.io/repos/github/guilhermebolfe11/my-site/badge.svg?branch=master)](https://coveralls.io/github/guilhermebolfe11/my-site?branch=master) ![License](https://img.shields.io/badge/license-MIT-blue.svg) ![Release](https://img.shields.io/github/v/release/guilhermebolfe11/my-site)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a79e2e75-6b88-4eb9-9e80-b01aec57fdae/deploy-status)](https://app.netlify.com/sites/reverent-agnesi-d90498/deploys)
 
 My personal website, where I publish my resume, explain my experiences and many more.
 
