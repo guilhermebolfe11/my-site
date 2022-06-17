@@ -1,6 +1,5 @@
 import * as React from 'react';
 import type { GetStaticProps, NextPage } from 'next';
-import Box from '@mui/material/Box';
 import IRepository from '../src/interfaces/IRepository';
 import api from '../src/services/api';
 import { Introduction } from '../src/Introduction';
@@ -15,7 +14,7 @@ interface IHomeProps {
   repos: IRepository[];
 }
 
-const Home: NextPage = ({ repos }: IHomeProps) => {
+const Home: NextPage<IHomeProps> = ({ repos }) => {
   return (
     <>
       <Introduction/>
