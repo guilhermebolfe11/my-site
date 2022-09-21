@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, Grid } from '@mui/material';
 
-import IRepository from './interfaces/IRepository';
+import IRepository from '../../interfaces/IRepository';
 import { Repo } from './Repo';
 interface IProjectsProps {
   repos: IRepository[];

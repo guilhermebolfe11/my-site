@@ -1,18 +1,16 @@
 import React from 'react';
 import {
   Card,
-  CardContent,
   CardHeader,
   Grid,
   Avatar,
   Link,
-  Typography,
   Tooltip,
 } from '@mui/material';
 import { format } from 'date-fns';
 import { SiTypescript, SiJupyter, SiMarkdown } from 'react-icons/si';
 
-import IRepository from './interfaces/IRepository';
+import IRepository from '../../interfaces/IRepository';
 
 interface IRepoProps {
   repo: IRepository;

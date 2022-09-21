@@ -1,5 +1,5 @@
 import { SiAmazonaws } from 'react-icons/si';
-import IStack from './interfaces/IStack';
+import IStack from '../../interfaces/IStack';
 
 export default {
   title:'Cloud',

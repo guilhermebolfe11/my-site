@@ -1,7 +1,6 @@
 import { SiWebpack, SiEslint, SiPrettier, SiSwagger } from 'react-icons/si';
-import { BsKanban } from 'react-icons/bs';
 
-import IStack from './interfaces/IStack';
+import IStack from '../../interfaces/IStack';
 
 export default {
   title: 'Others',

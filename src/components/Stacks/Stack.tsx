@@ -8,7 +8,7 @@ import {
   CardHeader,
 } from '@mui/material';
 
-import IStack from './interfaces/IStack';
+import IStack from '../../interfaces/IStack';
 
 interface IStackProps {
   stack: IStack;

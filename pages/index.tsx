@@ -2,13 +2,13 @@ import * as React from 'react';
 import type { GetStaticProps, NextPage } from 'next';
 import IRepository from '../src/interfaces/IRepository';
 import api from '../src/services/api';
-import { Introduction } from '../src/Introduction';
-import { About } from '../src/About';
-import { Graduate } from '../src/Graduate';
-import { Jobs } from '../src/Jobs';
-import { Projects } from '../src/Projects';
-import { Stacks } from '../src/Stacks';
-import { Articles } from '../src/Articles';
+import { Introduction } from '../src/components/Introduction/Introduction';
+import { About } from '../src/components/About/About';
+import { Graduate } from '../src/components/Graduate/Graduate';
+import { Jobs } from '../src/components/Jobs/Jobs';
+import { Projects } from '../src/components/Projects/Projects';
+import { Stacks } from '../src/components/Stacks/Stacks';
+import { Articles } from '../src/components/Articles/Articles';
 
 interface IHomeProps {
   repos: IRepository[];
