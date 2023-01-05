@@ -51,9 +51,9 @@ export function Jobs() {
               />
               <CardContent>
               <Typography variant='caption'>
-                Responsible for developing projects for the bank's internal use.
-                Participating actively in the planning decision of projects.
-                Responsible for all stages of the project life cycle.
+                {"Responsible for developing projects for the bank's internal use."+
+                "Participating actively in the planning decision of projects."+
+                "Responsible for all stages of the project life cycle."}
               </Typography>
               </CardContent>
             </Card>
@@ -71,10 +71,10 @@ export function Jobs() {
               />
               <CardContent>
               <Typography variant='caption'>
-                Responsible for the company's technology team.
-                Acting in person.
-                Managing team of 4 Developers including myself.
-                Interaction with suppliers and managers.
+                {"Responsible for the company's technology team."+
+                "Acting in person."+
+                "Managing team of 4 Developers including myself."+
+                "Interaction with suppliers and managers."}
               </Typography>
               </CardContent>
             </Card>
