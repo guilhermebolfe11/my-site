@@ -2,7 +2,6 @@ import { SiMysql, SiPostgresql, SiMongodb, SiAmazondynamodb } from 'react-icons/
 import IStack from '../../interfaces/IStack';
 
 export default {
-  title:'Databases',
   techs: [
     {
       title: 'MySQL',

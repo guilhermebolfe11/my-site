@@ -1,11 +1,13 @@
-import { createTheme,responsiveFontSizes } from '@mui/material/styles';
+import { createTheme, responsiveFontSizes } from '@mui/material/styles';
+import { ptBR } from '@mui/material/locale';
 
 // Create a theme instance.
 let theme = createTheme({
   palette: {
+    mode: 'dark',
     common: { black: '#000', white: '#fff' },
     background: { paper: '#fff', default: '#fafafa' },
-    secondary : {
+    secondary: {
       light: 'rgba(144, 201, 249, 1)',
       main: 'rgb(30, 136, 229)',
       dark: 'rgb(13, 71, 161)',
@@ -48,17 +50,29 @@ let theme = createTheme({
       fontFamily: ['JetBrains Mono', 'serif'].join(','),
     },
   },
-  components:{
+  components: {
+    MuiSelect: {
+      styleOverrides: {
+        standard: {
+          color: 'rgb(13, 71, 161)',
+          colorScheme: 'rgb(13, 71, 161)',
+          borderColor: 'rgb(13, 71, 161)',
+        },
+        icon: {
+          color: 'rgb(13, 71, 161)'
+        },
+      }
+    },
     MuiAvatar: {
-      styleOverrides:{
-        colorDefault:{
+      styleOverrides: {
+        colorDefault: {
           color: 'rgb(13, 71, 161)',
           backgroundColor: 'rgba(255, 255, 255, 1)',
         }
       }
     },
     MuiLink: {
-      styleOverrides:{
+      styleOverrides: {
         root: {
           margin: 5,
           color: 'rgb(13, 71, 161)',
@@ -66,8 +80,8 @@ let theme = createTheme({
       }
     },
     MuiCardContent: {
-      styleOverrides:{
-        root:{
+      styleOverrides: {
+        root: {
           overflowY: 'auto',
           listStyle: 'none',
           '&::-webkit-scrollbar': {
@@ -81,8 +95,8 @@ let theme = createTheme({
       }
     },
     MuiList: {
-      styleOverrides:{
-        root:{
+      styleOverrides: {
+        root: {
           overflowY: 'auto',
           listStyle: 'none',
           '&::-webkit-scrollbar': {
@@ -96,14 +110,25 @@ let theme = createTheme({
       }
     },
     MuiListItemText: {
-      styleOverrides:{
-        secondary:{
+      styleOverrides: {
+        secondary: {
           fontFamily: 'JetBrains Mono',
         }
       }
     },
-  }
-});
+    MuiCssBaseline: {
+      styleOverrides: {
+        '&::-webkit-scrollbar': {
+          width: '0.4em',
+        },
+        '&::-webkit-scrollbar-thumb': {
+          borderRadius: '4px',
+          backgroundColor: '#424242',
+        },
+      }
+    }
+  },
+}, ptBR);
 
 theme = responsiveFontSizes(theme);
 

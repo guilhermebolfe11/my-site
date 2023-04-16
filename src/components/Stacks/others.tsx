@@ -3,13 +3,7 @@ import { SiWebpack, SiEslint, SiPrettier, SiSwagger } from 'react-icons/si';
 import IStack from '../../interfaces/IStack';
 
 export default {
-  title: 'Others',
   techs: [
-    {
-      title: 'Webpack',
-      href: 'https://webpack.js.org/',
-      icon: <SiWebpack size="2rem" />,
-    },
     {
       title: 'Eslint',
       href: 'https://eslint.org/',

@@ -8,13 +8,13 @@ import {
   SiJavascript,
   SiGit,
   SiDotnet,
-  SiNextdotjs
+  SiNextdotjs,
+  SiPhp
 } from 'react-icons/si';
 
 import IStack from '../../interfaces/IStack';
 
 export default {
-  title: 'Development',
   techs: [
     {
       title: 'React',
@@ -65,6 +65,11 @@ export default {
       title: 'Git',
       href: 'https://git-scm.com/',
       icon: <SiGit size="2rem" />,
+    },
+    {
+      title: 'PHP',
+      href: 'https://www.php.net/',
+      icon: <SiPhp size="2rem" />,
     },
   ],
 } as IStack;

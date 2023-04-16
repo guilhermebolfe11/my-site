@@ -7,7 +7,6 @@ import {
 import IStack from '../../interfaces/IStack';
 
 export default {
-  title: 'DevOps',
   techs: [
     {
       title: 'Docker',

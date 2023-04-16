@@ -5,6 +5,5 @@ interface ITech {
 }
 
 export default interface IStack {
-  title: string;
   techs: ITech[];
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import {
   Card,
   CardHeader,
@@ -11,12 +11,14 @@ import { format } from 'date-fns';
 import { SiTypescript, SiJupyter, SiMarkdown } from 'react-icons/si';
 
 import IRepository from '../../interfaces/IRepository';
+import { LanguageContext } from '../../context/LanguageContext';
 
 interface IRepoProps {
   repo: IRepository;
 }
 
 export function Repo({ repo }: IRepoProps) {
+  const { locale } = useContext(LanguageContext);
   function getIconLanguage(language: string) {
     switch (language) {
       case 'Jupyter Notebook':
@@ -26,6 +28,15 @@ export function Repo({ repo }: IRepoProps) {
         return <SiTypescript />;
       default:
         return <SiMarkdown />;
+    }
+  }
+
+  function getFormatDate(locale: string): string {
+    switch (locale) {
+      case 'ptBR':
+        return "dd/MM/yyy HH:mm";
+      default:
+        return "yyy-MM-dd hh:mm aa";
     }
   }
 
@@ -43,7 +54,7 @@ export function Repo({ repo }: IRepoProps) {
               {repo.name}
             </Link>
           }
-          subheader={format(new Date(repo.pushed_at), 'yyy-MM-dd hh:mm aa')}
+          subheader={format(new Date(repo.pushed_at), getFormatDate(locale))}
         />
       </Card>
     </Grid>

@@ -12,16 +12,17 @@ import IStack from '../../interfaces/IStack';
 
 interface IStackProps {
   stack: IStack;
+  title: string;
 }
 
-export function Stack({ stack }: IStackProps) {
+export function Stack({ stack, title }: IStackProps) {
   return (
     <Grid item>
       <Card elevation={3}>
-        <CardHeader subheader={stack.title} />
+        <CardHeader subheader={title} />
         <CardContent>
-          <Grid container spacing={2} sx={{direction:'row',justifyContent:'flex-start'}}>
-            {stack.techs.map((t,i)=> (
+          <Grid container spacing={2} sx={{ direction: 'row', justifyContent: 'flex-start' }}>
+            {stack.techs.map((t, i) => (
               <Grid key={i} item>
                 <Tooltip title={t.title}>
                   <Link href={t.href} target="_blank">

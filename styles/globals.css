@@ -48,3 +48,12 @@ ul {
 button {
   cursor: pointer;
 }
+
+::-webkit-scrollbar {
+  width: '0.4em'
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: '4px';
+  background-color: '#424242';
+}
