@@ -50,7 +50,7 @@ export default function Footer() {
             href="https://drive.google.com/file/d/18uB8glO1LFSUL1WMYNKSjjh8GqvlCt5Y/view?usp=sharing"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">CV</p>
+            <p className="ml-2 h-7">Resume</p>
           </a>
         </li>
       </ul>
