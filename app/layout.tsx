@@ -7,7 +7,7 @@ import Footer from './components/footer'
 import { Navbar } from './components/nav'
 import './global.css'
 
-const baseUrl = 'http://localhost:300'
+const baseUrl = 'https://guilhermebolfe.com'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
