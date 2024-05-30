@@ -1,28 +1,35 @@
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import { GeistMono } from 'geist/font/mono'
-import { GeistSans } from 'geist/font/sans'
-import type { Metadata } from 'next'
-import Footer from './components/footer'
-import { Navbar } from './components/nav'
-import './global.css'
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import { GeistMono } from "geist/font/mono";
+import { GeistSans } from "geist/font/sans";
+import type { Metadata } from "next";
+import Footer from "./components/footer";
+import { Navbar } from "./components/nav";
+import "./global.css";
 
-const baseUrl = 'https://guilhermebolfe.com'
+const baseUrl = "https://guilhermebolfe.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
-  title: {
-    default: 'Guilherme Bolfe',
-    template: '%s | Guilherme Bolfe',
+  applicationName: "Guilherme Bolfe",
+  authors: {
+    name: "Guilherme Bolfe",
   },
-  description: 'This is my portfolio.',
+  creator: "Guilherme Bolfe",
+  title: {
+    default: "Guilherme Bolfe",
+    template: "%s | Guilherme Bolfe",
+  },
+  icons: '/favicon.ico',
+  keywords: ["software", "engineer", "software engineer"],
+  description: "This is my portfolio.",
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: "My Portfolio",
+    description: "This is my portfolio.",
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
-    type: 'website',
+    siteName: "My Portfolio",
+    locale: "en_US",
+    type: "website",
   },
   robots: {
     index: true,
@@ -30,25 +37,25 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-}
+};
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-black',
+        "text-black bg-white dark:text-white dark:bg-black",
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -63,5 +70,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }
