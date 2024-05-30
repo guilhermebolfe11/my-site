@@ -30,9 +30,6 @@ export default function Page() {
         I'm looking forward to bringing my passion for programming 
         and my thirst for learning.`}
       </p>
-      <p className="mb-4">
-        {`Let's connect and explore the exciting world of software development together!`}
-      </p>
     </section>
   );
 }
