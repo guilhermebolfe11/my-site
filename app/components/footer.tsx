@@ -1,3 +1,5 @@
+import getUserLocale from "get-user-locale";
+
 function ArrowIcon() {
   return (
     <svg
@@ -12,10 +14,25 @@ function ArrowIcon() {
         fill="currentColor"
       />
     </svg>
-  )
+  );
 }
 
 export default function Footer() {
+  const locale = getUserLocale();
+  const getLinkedIn = (): string => {
+    if (locale === "pt-BR") {
+      return "https://www.linkedin.com/in/guilherme-bolfe";
+    }
+    return "https://www.linkedin.com/in/guilherme-bolfe/?locale=en_US";
+  };
+
+  const getResume = (): string => {
+    if (locale === "pt-BR") {
+      return "https://drive.google.com/file/d/1T_cnOd4JnOxUfjLFCPk6BQwPoFZTecp5/view?usp=sharing";
+    }
+    return "https://drive.google.com/file/d/18uB8glO1LFSUL1WMYNKSjjh8GqvlCt5Y/view?usp=sharing";
+  };
+
   return (
     <footer className="mb-16">
       <ul className="font-sm mt-8 flex flex-col space-x-0 space-y-2 text-neutral-600 md:flex-row md:space-x-4 md:space-y-0 dark:text-neutral-300">
@@ -24,7 +41,7 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://www.linkedin.com/in/guilherme-bolfe/?locale=en_US"
+            href={getLinkedIn()}
           >
             <ArrowIcon />
             <p className="ml-2 h-7">LinkedIn</p>
@@ -41,13 +58,13 @@ export default function Footer() {
             <p className="ml-2 h-7">GitHub</p>
           </a>
         </li>
-        
+
         <li>
           <a
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://drive.google.com/file/d/18uB8glO1LFSUL1WMYNKSjjh8GqvlCt5Y/view?usp=sharing"
+            href={getResume()}
           >
             <ArrowIcon />
             <p className="ml-2 h-7">Resume</p>
@@ -55,5 +72,5 @@ export default function Footer() {
         </li>
       </ul>
     </footer>
-  )
+  );
 }
