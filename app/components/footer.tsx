@@ -1,4 +1,4 @@
-import getUserLocale from "get-user-locale";
+import getUserLocale from 'get-user-locale';
 
 function ArrowIcon() {
   return (
