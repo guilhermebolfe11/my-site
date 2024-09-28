@@ -1,32 +1,25 @@
-import { Analytics } from "@vercel/analytics/react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GeistMono } from "geist/font/mono";
 import { GeistSans } from "geist/font/sans";
 import type { Metadata } from "next";
 import Footer from "./components/footer";
+import { Navbar } from "./components/nav";
+import { ThemeProvider } from "./components/theme-switch";
+import { metaData } from "./config";
 import "./global.css";
 
-const baseUrl = "https://guilhermebolfe.com.br";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
-  applicationName: "Guilherme Bolfe",
-  authors: {
-    name: "Guilherme Bolfe",
-  },
-  creator: "Guilherme Bolfe",
+  metadataBase: new URL(metaData.baseUrl),
   title: {
-    default: "Guilherme Bolfe",
-    template: "%s | Guilherme Bolfe",
+    default: metaData.title,
+    template: `%s | ${metaData.title}`,
   },
-  icons: '/favicon.ico',
-  keywords: ["software", "engineer", "software engineer"],
-  description: "This is my site.",
+  description: metaData.description,
   openGraph: {
-    title: "Guilherme Bolfe",
-    description: "This is my site.",
-    url: baseUrl,
-    siteName: "Guilherme Bolfe",
+    images: metaData.ogImage,
+    title: metaData.title,
+    description: metaData.description,
+    url: metaData.baseUrl,
+    siteName: metaData.name,
     locale: "en_US",
     type: "website",
   },
@@ -41,9 +34,16 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  twitter: {
+    title: metaData.name,
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
-const cx = (...classes: string[]) => classes.filter(Boolean).join(" ");
+const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
@@ -51,21 +51,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html
-      lang="en"
-      className={cx(
-        "text-black bg-white dark:text-white dark:bg-black",
-        GeistSans.variable,
-        GeistMono.variable
-      )}
-    >
-      <body className="antialiased max-w-xl mx-4 mt-8 lg:mx-auto">
-        <main className="flex-auto min-w-0 mt-6 flex flex-col px-2 md:px-0">
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+      <head>
+      </head>
+      <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <main className="flex-auto min-w-0 mt-2 md:mt-6 flex flex-col px-6 sm:px-4 md:px-0 max-w-[640px] w-full">
+            <Navbar />
+            {children}
+            <Footer />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );
