@@ -1,0 +1,39 @@
+version: 2
+updates:
+  - package-ecosystem: 'npm'
+    directory: '/'
+    versioning-strategy: increase-if-necessary
+    target-branch: main
+    open-pull-requests-limit: 5
+    commit-message:
+      prefix: "chore(deps)"
+      prefix-development: "chore(deps-dev)"
+    schedule:
+      interval: weekly
+      day: saturday
+      time: "09:00"
+      timezone: America/Sao_Paulo
+    labels:
+      - 'dependencies'
+    reviewers:
+      - guilhermebolfe11
+    groups:
+      production-dependencies:
+        dependency-type: production
+        applies-to: version-updates
+        update-types:
+          - minor
+          - patch
+      develop-dependencies:
+        dependency-type: development
+        applies-to: version-updates
+        update-types:
+          - minor
+          - patch
+    ignore:
+      - dependency-name: '*'
+        update-types:
+          - version-update:semver-major
+    
+
+
