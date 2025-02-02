@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import React from "react";
 import { works } from "./work-data";
 
 export const metadata: Metadata = {
@@ -24,13 +25,15 @@ export default function Works() {
                 <span className="text-black dark:text-white font-medium tracking-tight">
                   {work.title}
                 </span>
-                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                  {work.year}
-                </span>
+                <div className="flex gap-1">
+                  {work.stacks.map((stack, index) => (
+                    <span key={index}>{React.createElement(stack)}</span>
+                  ))}
+                </div>
               </div>
-              <p className="prose prose-neutral dark:prose-invert pt-3">
-                {work.description}
-              </p>
+              <span className="text-gray-500 dark:text-gray-400 text-sm">
+                {work.startDate} - {work.endDate}
+              </span>
             </div>
           </a>
         ))}
