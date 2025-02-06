@@ -4,8 +4,11 @@ import {
   SiAmazonapigateway,
   SiAmazondynamodb,
   SiAwslambda,
+  SiFastify,
   SiGithub,
   SiPnpm,
+  SiPostgresql,
+  SiPrisma,
   SiTerraform,
   SiTypescript,
   SiVitest,
@@ -34,5 +37,28 @@ export const projects: Project[] = [
       SiVitest,
       SiPnpm,
     ],
+  },
+  {
+    description:
+      "You work for an InsurTech called Waner-On Insurance. The company has been growing exponentially, and its young customer base is demanding more modern and flexible products that better align with current realities.",
+    title: "Challenge 2",
+    url: "https://github.com/guilhermebolfe11/challenge2",
+    stacks: [
+      SiTypescript,
+      FaNodeJs,
+      SiGithub,
+      SiVitest,
+      SiPnpm,
+      SiPostgresql,
+      SiPrisma,
+      SiFastify
+    ],
+  },
+  {
+    description:
+      "This is a typescript version of https://github.com/victorqribeiro/TinyJS",
+    title: "TinyTS",
+    url: "https://github.com/guilhermebolfe11/TinyTS",
+    stacks: [SiTypescript],
   },
 ];
