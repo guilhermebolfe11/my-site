@@ -9,27 +9,25 @@ interface HomeContent {
   third: string;
   fourth: string;
 }
+
 const getHomeContent = (locale: string) => {
   const content: HomeContent = {
-    title: "Hi! 👋",
-    first: `I'm Guilherme, and my love for programming began at the age of 13 when 
-      I took a web design course in my hometown, Prudentópolis, in the 
-      interior of Paraná, Brazil. At 17, I decided to pursue my passion and
-      moved to Alegrete, Rio Grande do Sul, a thousand kilometers away from
-      everything I knew, to study Software Engineering at Unipampa. It was
-      an incredible journey that brought me here.`,
-    second: `Currently, I work as a back-end developer with a degree in 
-      Software Engineering. I have a deep appreciation for seeing a 
-      "status 200" after completing an API, but I also enjoy the art
-      of creating a beautiful front-end.`,
-    third: `My quest for growth extends beyond just programming; I am committed 
-      to evolving in areas like leadership and management, as I believe a
-      good software engineer should be versatile and understand the full
-      spectrum of software development.`,
-    fourth: `What truly motivates me is problem-solving. I believe it's 
-      in challenging situations that we learn and grow the most.
-      I'm looking forward to bringing my passion for programming 
-      and my thirst for learning.`,
+    title: "Hello there! 👋",
+    first: `I'm Guilherme, a passionate Software Engineer who discovered 
+    the world of programming at 13 through a web design course in my hometown
+     of Prudentópolis, Brazil. At 17, I took a leap toward my dream and moved 
+     over 1,000 km away to study Software Engineering at UNIPAMPA, in southern 
+     Brazil — a journey that shaped both my personal and professional life.`,
+    second: `Today, I specialize in backend development, with a strong focus on 
+    building robust APIs and scalable systems using modern technologies like 
+    Node.js, TypeScript, MongoDB, and cloud-based tools. Still, I also enjoy 
+    building intuitive front-end interfaces when needed — I value understanding 
+    the full picture of software development.`,
+    third: `I'm always seeking growth, not only technically but also in 
+    leadership and communication. I believe great engineers are those who can 
+    combine problem-solving with a broader understanding of business and people.`,
+    fourth: `What drives me the most is solving real problems. I thrive in challenging 
+    environments where I can continuously learn and make a meaningful impact.`,
   };
 
   const translate: Record<string, Partial<HomeContent>> = {

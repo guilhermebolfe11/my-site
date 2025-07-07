@@ -13,6 +13,7 @@ import {
   SiTypescript,
   SiVitest,
 } from "react-icons/si";
+import { PiFileCSharp } from "react-icons/pi";
 
 export interface Project {
   title: string;
@@ -21,6 +22,16 @@ export interface Project {
   stacks: Array<IconType>;
 }
 export const projects: Project[] = [
+  {
+    description:
+        "Repository with examples of design patterns",
+    title: "Patterns",
+    url: "https://github.com/guilhermebolfe11/patterns",
+    stacks: [
+      SiTypescript,
+      PiFileCSharp
+    ],
+  },
   {
     description:
       "Your challenge is to build an API that tracks the number of accesses to website and allows a user to create an account",
