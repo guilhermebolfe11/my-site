@@ -12,6 +12,7 @@ import {
   SiTerraform,
   SiTypescript,
   SiVitest,
+  SiNextdotjs
 } from "react-icons/si";
 import { PiFileCSharp } from "react-icons/pi";
 
@@ -30,6 +31,16 @@ export const projects: Project[] = [
     stacks: [
       SiTypescript,
       PiFileCSharp
+    ],
+  },
+  {
+    description:
+        "Utils to SWE",
+    title: "Utils",
+    url: "https://utils.guilhermebolfe.com.br",
+    stacks: [
+      SiTypescript,
+      SiNextdotjs
     ],
   },
   {
