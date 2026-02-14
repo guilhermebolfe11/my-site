@@ -18,7 +18,9 @@ import {
   SiRabbitmq,
   SiReact,
   SiTerraform,
-  SiTypescript
+  SiTypescript,
+  SiDotnet,
+  SiGithubactions  
 } from "react-icons/si";
 import { VscAzureDevops } from "react-icons/vsc";
 
@@ -40,6 +42,9 @@ export const works: Work[] = [
       SiGithub,
       SiMongodb,
       SiGoogledataproc,
+      PiFileCSharp,
+      SiDotnet,
+      SiGithubactions  
     ],
     startDate: "2023/12",
     endDate: "",
