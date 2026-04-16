@@ -5,9 +5,9 @@ import getUserLocale from "get-user-locale";
 import { FaGithub, FaGoogleDrive, FaLinkedinIn } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 
-function SocialLink({ href, icon: Icon }) {
+function SocialLink({ href, icon: Icon, label }: { href: string; icon: React.ElementType; label: string }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer">
+    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
       <Icon />
     </a>
   );
@@ -45,10 +45,10 @@ function SocialLinks() {
 
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
-      <SocialLink href={socialLinks.github} icon={FaGithub} />
-      <SocialLink href={socialLinks.linkedIn} icon={FaLinkedinIn} />
-      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
-      <SocialLink href={socialLinks.resume} icon={FaGoogleDrive} />
+      <SocialLink href={socialLinks.github} icon={FaGithub} label="GitHub" />
+      <SocialLink href={socialLinks.linkedIn} icon={FaLinkedinIn} label="LinkedIn" />
+      <SocialLink href={socialLinks.email} icon={TbMailFilled} label="Email" />
+      <SocialLink href={socialLinks.resume} icon={FaGoogleDrive} label="Resume" />
     </div>
   );
 }
@@ -62,14 +62,6 @@ export default function Footer() {
       <a className="no-underline" href="/" rel="noopener noreferrer">
         {metaData.title}
       </a>
-      <style jsx>{`
-        @media screen and (max-width: 480px) {
-          article {
-            padding-top: 2rem;
-            padding-bottom: 4rem;
-          }
-        }
-      `}</style>
       <SocialLinks />
     </small>
   );
