@@ -1,10 +1,7 @@
 import { IconType } from "react-icons";
-import { FaNodeJs } from "react-icons/fa6";
-import { PiFileCSharp } from "react-icons/pi";
+import { FaNodeJs, FaAws } from "react-icons/fa6";
+import { PiFileCSharp, PiDatabase } from "react-icons/pi";
 import {
-  SiAmazondynamodb,
-  SiAmazonsqs,
-  SiAwslambda,
   SiFlutter,
   SiGithub,
   SiGitlab,
@@ -12,7 +9,6 @@ import {
   SiGoogledataproc,
   SiJavascript,
   SiMongodb,
-  SiOracle,
   SiPhp,
   SiPostgresql,
   SiRabbitmq,
@@ -56,11 +52,9 @@ export const works: Work[] = [
       SiTypescript,
       FaNodeJs,
       PiFileCSharp,
-      SiAmazonsqs,
+      FaAws,
       VscAzureDevops,
-      SiAmazondynamodb,
       SiMongodb,
-      SiAwslambda,
       SiGoland,
       SiTerraform
     ],
@@ -74,11 +68,9 @@ export const works: Work[] = [
       SiJavascript,
       SiReact,
       PiFileCSharp,
-      SiAmazondynamodb,
-      SiAmazonsqs,
+      FaAws,
       VscAzureDevops,
       SiPostgresql,
-      SiAwslambda,
     ],
     startDate: "2020/08",
     endDate: "2021/10",
@@ -108,7 +100,7 @@ export const works: Work[] = [
       SiFlutter,
       VscAzureDevops,
       SiPostgresql,
-      SiOracle,
+      PiDatabase,
     ],
     startDate: "2019/10",
     endDate: "2020/03",

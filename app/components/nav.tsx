@@ -1,4 +1,4 @@
-import { getContent, metaData } from "app/config";
+import { getContent, metaData } from "../config";
 import getUserLocale from "get-user-locale";
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";

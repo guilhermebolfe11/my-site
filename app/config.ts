@@ -14,9 +14,22 @@ export function getContent<T>(
 }
 
 export const metaData = {
-  baseUrl: "https://guilhermebolfe.com",
+  baseUrl: "https://guilhermebolfe.com.br",
   title: "Guilherme Bolfe",
   name: "Guilherme Bolfe",
   ogImage: "/opengraph-image.png",
-  description: "My Site",
+  description:
+    "Software Engineer specializing in backend development with Node.js, TypeScript, and cloud-based systems. Passionate about building robust APIs and scalable architectures.",
+  keywords: [
+    "Software Engineer",
+    "Backend Developer",
+    "Node.js",
+    "TypeScript",
+    "API Development",
+    "Cloud",
+    "AWS",
+    "MongoDB",
+    "PostgreSQL",
+    "Guilherme Bolfe",
+  ],
 };

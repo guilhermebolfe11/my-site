@@ -4,7 +4,8 @@ import { projects } from "./project-data";
 
 export const metadata: Metadata = {
   title: "Projects",
-  description: "My Projects",
+  description:
+    "Open source projects and personal work by Guilherme Bolfe, Software Engineer.",
 };
 export default function Works() {
   return (

@@ -3,8 +3,9 @@ import React from "react";
 import { works } from "./work-data";
 
 export const metadata: Metadata = {
-  title: "Works",
-  description: "My Works",
+  title: "Work Experience",
+  description:
+    "Professional work experience of Guilherme Bolfe, Software Engineer specializing in backend development.",
 };
 
 export default function Works() {

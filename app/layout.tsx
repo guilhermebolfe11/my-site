@@ -14,6 +14,7 @@ export const metadata: Metadata = {
     template: `%s | ${metaData.title}`,
   },
   description: metaData.description,
+  keywords: metaData.keywords,
   openGraph: {
     images: metaData.ogImage,
     title: metaData.title,
@@ -53,6 +54,31 @@ export default function RootLayout({
   return (
     <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
       <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: metaData.name,
+              url: metaData.baseUrl,
+              image: `${metaData.baseUrl}/profile.png`,
+              jobTitle: "Software Engineer",
+              sameAs: [
+                "https://github.com/guilhermebolfe11",
+                "https://www.linkedin.com/in/guilherme-bolfe",
+              ],
+              knowsAbout: [
+                "Node.js",
+                "TypeScript",
+                "Backend Development",
+                "API Design",
+                "Cloud Computing",
+                "AWS",
+              ],
+            }),
+          }}
+        />
       </head>
       <body className="antialiased flex flex-col items-center justify-center mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
         <ThemeProvider

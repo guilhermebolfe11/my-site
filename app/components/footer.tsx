@@ -1,6 +1,6 @@
 "use client";
 
-import { getContent, metaData } from "app/config";
+import { getContent, metaData } from "../config";
 import getUserLocale from "get-user-locale";
 import { FaGithub, FaGoogleDrive, FaLinkedinIn } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";

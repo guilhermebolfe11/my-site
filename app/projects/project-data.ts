@@ -1,9 +1,6 @@
 import { IconType } from "react-icons";
-import { FaNodeJs } from "react-icons/fa6";
+import { FaNodeJs, FaAws } from "react-icons/fa6";
 import {
-  SiAmazonapigateway,
-  SiAmazondynamodb,
-  SiAwslambda,
   SiFastify,
   SiGithub,
   SiPnpm,
@@ -51,10 +48,8 @@ export const projects: Project[] = [
     stacks: [
       SiTypescript,
       FaNodeJs,
-      SiAmazonapigateway,
+      FaAws,
       SiTerraform,
-      SiAwslambda,
-      SiAmazondynamodb,
       SiGithub,
       SiVitest,
       SiPnpm,
