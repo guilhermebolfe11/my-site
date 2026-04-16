@@ -1,30 +1,13 @@
-import { getContent, metaData } from "../config";
-import getUserLocale from "get-user-locale";
+import { metaData } from "../config";
 import Link from "next/link";
 import { ThemeSwitch } from "./theme-switch";
 
-interface NavContent {
-  [key: string]: { name: string };
-}
-
-const getNavContent = (locale: string) => {
-  const content: NavContent = {
-    "/works": { name: "Works" },
-    "/projects": { name: "Projects" },
-  };
-
-  const translate: Record<string, Partial<NavContent>> = {
-    "pt-BR": {
-      "/works": { name: "Works" },
-      "/projects": { name: "Projects" },
-    },
-  };
-
-  return getContent<NavContent>(translate, locale, content);
+const navItems: Record<string, { name: string }> = {
+  "/works": { name: "Work Experience" },
+  "/projects": { name: "Projects" },
 };
 
 export function Navbar() {
-  const navItems = getNavContent(getUserLocale());
   return (
     <nav className="lg:mb-16 mb-12 py-4">
       <div className="flex flex-col md:flex-row md:items-center justify-between">

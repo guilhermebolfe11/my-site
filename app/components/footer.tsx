@@ -4,11 +4,12 @@ import { getContent, metaData } from "../config";
 import getUserLocale from "get-user-locale";
 import { FaGithub, FaGoogleDrive, FaLinkedinIn } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
+import { useState, useEffect } from "react";
 
 function SocialLink({ href, icon: Icon, label }: { href: string; icon: React.ElementType; label: string }) {
   return (
-    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label}>
-      <Icon />
+    <a href={href} target="_blank" rel="noopener noreferrer" aria-label={label} className="text-neutral-600 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-colors">
+      <Icon size={18} />
     </a>
   );
 }
@@ -41,7 +42,12 @@ const getSocialLinksContent = (locale: string) => {
 };
 
 function SocialLinks() {
-  const socialLinks = getSocialLinksContent(getUserLocale());
+  const defaultLinks = getSocialLinksContent("en");
+  const [socialLinks, setSocialLinks] = useState(defaultLinks);
+
+  useEffect(() => {
+    setSocialLinks(getSocialLinksContent(getUserLocale()));
+  }, []);
 
   return (
     <div className="flex text-lg gap-3.5 float-right transition-opacity duration-300 hover:opacity-90">
