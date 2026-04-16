@@ -6,6 +6,7 @@ import { Navbar } from "./components/nav";
 import { ThemeProvider } from "./components/theme-switch";
 import { metaData } from "./config";
 import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import "./global.css";
 
 export const metadata: Metadata = {
@@ -101,6 +102,7 @@ export default function RootLayout({
           </main>
         </ThemeProvider>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

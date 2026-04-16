@@ -10,6 +10,7 @@
     "@types/node": "25.6.0",
     "@types/react": "19.2.14",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.0.0",
     "geist": "1.7.0",
     "get-user-locale": "^3.0.0",
     "katex": "^0.16.45",
