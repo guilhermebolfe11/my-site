@@ -13,21 +13,16 @@ interface HomeContent {
 const getHomeContent = (locale: string) => {
   const content: HomeContent = {
     title: "Hello there! 👋",
-    first: `I'm Guilherme, a passionate Software Engineer who discovered 
-    the world of programming at 13 through a web design course in my hometown
-     of Prudentópolis, Brazil. At 17, I took a leap toward my dream and moved 
-     over 1,000 km away to study Software Engineering at UNIPAMPA, in southern 
-     Brazil — a journey that shaped both my personal and professional life.`,
-    second: `Today, I specialize in backend development, with a strong focus on 
-    building robust APIs and scalable systems using modern technologies like 
-    Node.js, TypeScript, MongoDB, and cloud-based tools. Still, I also enjoy 
-    building intuitive front-end interfaces when needed — I value understanding 
-    the full picture of software development.`,
-    third: `I'm always seeking growth, not only technically but also in 
-    leadership and communication. I believe great engineers are those who can 
-    combine problem-solving with a broader understanding of business and people.`,
-    fourth: `What drives me the most is solving real problems. I thrive in challenging 
-    environments where I can continuously learn and make a meaningful impact.`,
+    first: `I’m Guilherme Bolfe, a Software Engineer focused on building scalable and reliable systems.`,
+    second: `Over the past years, I’ve worked on complex backend systems in the financial sector,
+    contributing to companies like Stone, BTG Pactual, and Gavea. My work involves designing APIs,
+    building distributed systems, and developing platforms that support real business operations at scale.`,
+    third: `I have strong experience with Node.js, TypeScript, and cloud platforms like AWS, 
+    always focusing on performance, system design, and long-term maintainability.`,
+    fourth: `Beyond coding, I’m interested in software architecture, engineering best practices,
+    and continuous learning. Currently, I’m also pursuing a Master’s degree in Software Engineering, 
+    deepening my knowledge in complex systems and research.
+    I’m motivated by solving real problems and building systems that make a meaningful impact.`,
   };
 
   const translate: Record<string, Partial<HomeContent>> = {
